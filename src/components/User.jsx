@@ -1,4 +1,5 @@
-export const User=({id,name,age,country,city,tel,email,status,sex='male' })=>{
+
+export const User={({id,name,age,country,city,tel,email,status,sex='male' })=>{
     return(
         <div>
 <p>name:{name}</p>

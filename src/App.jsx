@@ -1,20 +1,17 @@
 import React from 'react';
-import { User } from './components/User';
-import './App.css';
 
+import './App.css';
+import { Counter } from './components/Counter/Counter';
+
+import { UserList } from './components/UserList';
+import { Section } from './components/Section';
 function App() {
   return (
     <div>
-      <User
-        name="Alex"
-        age={35}
-        country="Ukraine"
-        city="Kyiv"
-        tel="+380123456789"
-        email="alex@example.com"
-        status="active"
-        sex="male"
-      />
+      <Section>
+      <UserList/>
+      </Section>
+      <Counter/>
     </div>
   );
 }

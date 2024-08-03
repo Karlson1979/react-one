@@ -1,0 +1,58 @@
+[
+    {
+      "name": "Alex",
+      "age": 35,
+      "country": "Ukraine",
+      "city": "Kyiv",
+      "tel": "+380123456789",
+      "email": "alex1@example.com",
+      "status": "active",
+      "sex": "male",
+      "id": 1
+    },
+    {
+      "name": "Maria",
+      "age": 28,
+      "country": "Ukraine",
+      "city": "Lviv",
+      "tel": "+380987654321",
+      "email": "maria@example.com",
+      "status": "active",
+      "sex": "female",
+      "id": 2
+    },
+    {
+      "name": "Ivan",
+      "age": 42,
+      "country": "Ukraine",
+      "city": "Odessa",
+      "tel": "+380555666777",
+      "email": "ivan@example.com",
+      "status": "inactive",
+      "sex": "male",
+      "id": 3
+    },
+    {
+      "name": "Olga",
+      "age": 31,
+      "country": "Ukraine",
+      "city": "Kharkiv",
+      "tel": "+380333444555",
+      "email": "olga@example.com",
+      "status": "active",
+      "sex": "female",
+      "id": 4
+    },
+    {
+      "name": "Dmytro",
+      "age": 27,
+      "country": "Ukraine",
+      "city": "Dnipro",
+      "tel": "+380111222333",
+      "email": "dmytro@example.com",
+      "status": "inactive",
+      "sex": "male",
+      "id": 5
+    }
+  ]
+  

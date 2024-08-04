@@ -2,6 +2,8 @@ import { User } from "./User"
 import users from '../users.json'
 import css from '../components/user.module.css'
 export const UserList = () => {
+  const showName=(userName,userAge)=>console.log(userName,userAge)
+
   return (
     
         <div className={css.userList}>
@@ -17,6 +19,7 @@ export const UserList = () => {
             email={user.email}
             status={user.status}
             sex={user.sex}
+            showName={showName}
             />
            ))}
         

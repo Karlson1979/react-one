@@ -2,14 +2,14 @@
  */import {Profile} from './components/Profile/Profile'
 import './App.css';
 import { Description } from './components/Hw2/Description';
-/* import { Counter } from './components/Counter/Counter';
+import { Counter } from './components/Counter/Counter';
 import userData from '../src/userData.json'
 import { UserList } from './components/UserList';
 import { Section } from './components/Section';
 import { FriendList } from './components/FriendList/FriendList';
 import friends from '../src/friends.json'
 import transactions from '../src/transactions.json'
-import { TransactionHistory } from './components/TransactionHistory/TransactionHistory'; */
+import { TransactionHistory } from './components/TransactionHistory/TransactionHistory'; 
 import {Options} from './components/Hw2/Options'
 import {Feedback} from './components/Hw2/Feedback'
 import { Notification } from './components/Hw2/Notification';
@@ -45,7 +45,10 @@ function App() {
 useEffect(()=>{
   window.localStorage.setItem('feedback',JSON.stringify(feedback))
 },[feedback])
-  
+  const [showList,setShowList]=useState(false)
+  const toggleShowList=()=>{
+    setShowList(!showList)
+  }
   return (
     <div>
 <Description/>
@@ -66,7 +69,7 @@ useEffect(()=>{
         stats={userData.stats}
       /> */}
 
-      {/* <FriendList friends={friends}/> */}
+     <FriendList friends={friends} toggleShowList={toggleShowList} showList={showList}/>
       {/* <TransactionHistory items={transactions}/> */}
       
     </div>

@@ -1,8 +1,10 @@
 import React from 'react'
 import { FriendListItem } from '../FriendListItem/FriendListItem'
-export const FriendList = ({friends}) => {
+export const FriendList = ({friends,toggleShowList,showList}) => {
   return (
-    <ul >
+    <>
+    <button type='button' onClick={toggleShowList}>show list</button>
+   {showList&&<ul >
 	{friends.map ((friend)=>
        <li key={friend.id}>
 		<FriendListItem 
@@ -13,7 +15,9 @@ export const FriendList = ({friends}) => {
 	</li> 
     )}
 	
-</ul>
+</ul>}
+</>
+    
 
   )
 }
